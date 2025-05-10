@@ -23,6 +23,14 @@ class Register : AppCompatActivity() {
         }*/
         val login: Intent = Intent(this, Login::class.java)
 
+        try {
+            throw NullPointerException("NOTE: Not possible to trigger null pointer exception intentionally")
+        } catch(npe: NullPointerException) {
+            Log.e(getString(R.string.app_name), "An error has occured. Detail: ${npe.toString()}")
+            val npeToast: Toast = Toast.makeText(this, "An error has occured", Toast.LENGTH_SHORT)
+            npeToast.show()
+        }
+
         val usernameField: EditText = findViewById(R.id.usernameField)
         val passwordField: EditText = findViewById(R.id.passwordField)
 
