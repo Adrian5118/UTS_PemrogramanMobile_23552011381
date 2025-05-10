@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ChillChat</string>
+    <string name="login_username">Username</string>
+    <string name="login_password">Password</string>
+    <string name="login_loginButton">Log in</string>
+    <string name="login_regButton">Register</string>
+    <string name="login_msgInvalid">Invalid username or password!</string>
+    <string name="login_msgSuccess">Login successful!</string>
+    <string name="register_backButton">Go Back</string>
+    <string name="register_msgEmpty">Empty username or password!</string>
+    <string name="register_msgSuccess">Register successful!</string>
+</resources>
